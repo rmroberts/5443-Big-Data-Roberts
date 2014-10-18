@@ -22,4 +22,4 @@ Here are all the files with original and compressed sizes:
 | xml  | 2.3GB | 82MB |  96%  | 75MB |  97%  |
 | yml  | 771MB | 52MB |  93%  | 61MB |  92%  |
 | json | 814MB | 54MB |  93%  | 63MB |  92%  |
-XML has the highest compression ratio.  This is probably because it has by far the most repeated strings (e.g. <column name= ... </column>), which can be reduced to a reference to the previous identical string.
+XML has the highest compression ratio.  This is probably because it has by far the most repeated strings (e.g. `<column name= ...  </column>`), which can be reduced to a reference to the previous identical string.
