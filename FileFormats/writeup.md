@@ -14,7 +14,6 @@ The json file produced by this program is 814MB, a little bigger than the yaml f
 Important note: the files in this repository are much smaller portions of the original files, since GitHub rejects any pushes that contain files larger than 100 MB (see https://help.github.com/articles/working-with-large-files/).
 
 #### File Compression
-Here are all the files with original and compressed sizes:
 | type | size  | zip  | ratio | gzip | ratio |
 |------|-------|------|-------|------|-------|
 | csv  | 484MB | 51MB |  90%  | 59MB |  88%  |
