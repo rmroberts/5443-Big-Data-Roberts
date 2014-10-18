@@ -8,9 +8,12 @@ I used Python to write the script.  Here's how it works:
 3. Split the line by commas  
 4. Write each field name to the json file, followed by the element of the array that matches it, referred to by index.  These are the key-value pairs, with each line being a json object.  
 5. Repeat this for the entire file.  
-This is simple enough that a number of languages would probably work pretty well.  Python may have good libraries for this sort of thing, but that is irrelevant since we are not using them for this assignment.  
-The json file produced by this program is 814MB, a little bigger than the yaml file.
+This is simple enough that a number of languages would probably work pretty well.  Python may have good libraries for this sort of thing, but that is irrelevant since we are not using them for this assignment.  So the language chosen did not affect the file type chosen for conversion.
+The json file produced by this program is 814MB, a little bigger than the yaml file.  This makes sense since the json file is sort of like the yaml file plus brackets, braces, commas, and quotation marks, minus only the dashes. 
 
+Important note: the files in this repository are much smaller portions of the original files, since GitHub rejects any pushes that contain files larger than 100 MB (see https://help.github.com/articles/working-with-large-files/).
+
+Here are all the files with original and compressed sizes:
 #### File Compression
 | type | size  | zip  | ratio | gzip | ratio |
 |------|-------|------|-------|------|-------|
@@ -19,4 +22,4 @@ The json file produced by this program is 814MB, a little bigger than the yaml f
 | xml  | 2.3GB | 82MB |  96%  | 75MB |  97%  |
 | yml  | 771MB | 52MB |  93%  | 61MB |  92%  |
 | json | 814MB | 54MB |  93%  | 63MB |  92%  |
-XML has the highest compression ratio.
+XML has the highest compression ratio.  This is probably because it has by far the most repeated strings (e.g. <column name= ... </column>), which can be reduced to a reference to the previous identical string.
